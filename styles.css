@@ -26,13 +26,14 @@ body {
     justify-content: space-around;
     align-items: center;
     list-style: none;
-    font-weight: 500;
+    
 }
 
 .filter {
     cursor: pointer;
     border-radius: 100px;
     padding: 8px 16px;
+    font-weight: 500;
 }
 
 .filter.active {
