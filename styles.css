@@ -80,6 +80,7 @@ body {
     padding: 5px 0;
     margin: 5px 0;
     background: -webkit-linear-gradient(45deg, #419AF2, #4FA9F2, #5EB9F1, #6CC8F1, #7BD8F0, #89E7F0);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
