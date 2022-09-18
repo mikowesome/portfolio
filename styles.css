@@ -270,7 +270,8 @@ body {
         max-height: 298px;
     }
     .grid {
-        grid-template-columns: repeat(2, fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(8, 1fr);
         column-gap: 20px;
     }
     #introduction {
