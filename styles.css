@@ -6,7 +6,7 @@ body {
 
 .container {
     max-width: 360px;
-    width: 100%f;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -47,7 +47,7 @@ body {
 .grid {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(13, 1fr);
+    grid-template-rows: repeat(15, 1fr);
     row-gap: 20px;
 }
 
@@ -172,16 +172,33 @@ body {
 
 /* Projects */
 
+.card-project {
+    max-height: 680px;
+    grid-row: span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .project-title {
     text-align: center;
     font-weight: 700;
-    font-size: 1.2rem;
+    font-size: 1.75rem;
 }
 
 .project-gif {
     width: 100%;
     border-radius: 32px;
     margin: 20px 0;
+}
+
+.project-highlight {
+    font-weight: 700;
+}
+
+.project-description {
+    font-size: 1.2rem;
+    line-height: 1.2;
 }
 
 .button-container {
@@ -213,3 +230,67 @@ body {
 }
 
 /* MAIN END */
+
+/* MEDIA QUERIES */
+@media (min-width: 481px) {
+    .container {
+        max-width: 450px;
+    }
+    .card {
+        max-width: 390px;
+        max-height: 390px;
+    }
+    .intro-greeting {
+        font-size: 2rem;
+    }
+    .intro-heading {
+        font-size: 3rem;
+    }
+    .intro-info {
+        font-size: 1.55rem;
+    }
+    .tech-skill {
+        width: 80px;
+    }
+    .skills-icon {
+        height: 80px;
+        width: 80px;
+    }
+    .card-project {
+        max-height: 868px;
+    }
+}
+
+@media (min-width: 750px) {
+    .container {
+        max-width: 744px;
+    }
+    .card {
+        max-width: 298px;
+        max-height: 298px;
+    }
+    .grid {
+        grid-template-columns: repeat(2, fr);
+        column-gap: 20px;
+    }
+    #introduction {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        max-width: 680px;
+        grid-column: span 2;
+    }
+    .intro-heading {
+        font-size: 3.8rem;
+    }
+    .tech-skill {
+        width: 60px;
+    }
+    .skills-icon {
+        height: 60px;
+        width: 60px;
+    }
+    .card-project {
+        max-height: 684px;
+    }
+}
